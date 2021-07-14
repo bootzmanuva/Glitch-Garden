@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1631361083148855362}
   - component: {fileID: -56718929532087104}
   - component: {fileID: 194490186314485663}
-  - component: {fileID: 1333101329582070846}
   - component: {fileID: 1570397866771900562}
+  - component: {fileID: 1333101329582070846}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -143,19 +143,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.61036634, y: -0.2798457}
   m_Size: {x: 0.5155649, y: 0.7992563}
   m_Direction: 0
---- !u!114 &1333101329582070846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631361083148855363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a3766f09c06cc64fafd2192c43f6c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!114 &1570397866771900562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +156,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1333101329582070846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631361083148855363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3766f09c06cc64fafd2192c43f6c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+  deathVFXTimer: 1
