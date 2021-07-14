@@ -14,11 +14,15 @@ public class StarDisplay : MonoBehaviour
         UpdateDisplay();
     }
 
-
     //Resource spending and adding
     private void UpdateDisplay()
     {
         starText.text = stars.ToString();
+    }
+
+    public bool HaveEnoughStars(int amount)
+    {
+        return stars >= amount;
     }
 
     public void AddStars(int amount)
