@@ -49,8 +49,5 @@ public class DefenderSpawner : MonoBehaviour
         // if we have enough stars
             // spawn the defender
             // spend the stars
-        
-
-
     }
 }

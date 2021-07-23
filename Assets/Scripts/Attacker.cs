@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
+    [Range (0f, 5f)]
     float currentSpeed = 1f;
-    [SerializeField] int health = 100;
     GameObject currentTarget;
+
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
+    }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
+        UpdateAnimationState();
     }
 
     public void SetMovementSpeed(float speed)
@@ -23,5 +34,23 @@ public class Attacker : MonoBehaviour
     {
         GetComponent <Animator>().SetBool("isAttacking", true);
         currentTarget = target;
+    }
+
+    public void StrikeCUrrentTarget(float damage)
+    {
+        if (!currentTarget) {return;}
+        Health health = currentTarget.GetComponent<Health>();
+        if (health)
+        {
+            health.DealDamage(damage);
+        }
+    }
+
+    private void UpdateAnimationState()
+    {
+        if(!currentTarget)
+        {
+            GetComponent<Animator>().SetBool("isAttacking", false);
+        }
     }
 }

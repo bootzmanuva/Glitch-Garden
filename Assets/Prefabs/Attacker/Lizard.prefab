@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1562153005945638035}
   - component: {fileID: 1562153005945638045}
-  - component: {fileID: 8951007398617296927}
-  - component: {fileID: 125208439694175040}
   - component: {fileID: 1640734307036253261}
   - component: {fileID: 1264952094157060321}
-  - component: {fileID: 508313305}
   - component: {fileID: 1046997993822363380}
+  - component: {fileID: 8951007398617296927}
+  - component: {fileID: 125208439694175040}
+  - component: {fileID: 508313305}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -57,6 +57,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1640734307036253261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562153005945638044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a927ce48dba7eac4abb484a3269d4407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1264952094157060321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562153005945638044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3766f09c06cc64fafd2192c43f6c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+  deathVFXTimer: 1
+--- !u!114 &1046997993822363380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562153005945638044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecad9d6aa7f526a489eef4e1ea2b41d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &8951007398617296927
 Rigidbody2D:
   serializedVersion: 4
@@ -94,34 +133,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.06317556, y: -0.007982135}
   m_Size: {x: 0.69438577, y: 0.9089377}
   m_Direction: 0
---- !u!114 &1640734307036253261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562153005945638044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a927ce48dba7eac4abb484a3269d4407, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
---- !u!114 &1264952094157060321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562153005945638044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a3766f09c06cc64fafd2192c43f6c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 30
-  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
-  deathVFXTimer: 1
 --- !u!212 &508313305
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -172,18 +183,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1046997993822363380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562153005945638044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecad9d6aa7f526a489eef4e1ea2b41d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7273043107273830655
 GameObject:
   m_ObjectHideFlags: 0
