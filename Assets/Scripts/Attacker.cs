@@ -10,7 +10,11 @@ public class Attacker : MonoBehaviour
 
     private void Awake()
     {
-        FindObjectOfType<LevelController>().AttackerSpawned();
+        LevelController levelController = FindObjectOfType<LevelController>();
+        if (levelController != null)
+        {
+            levelController.AttackerKilled();
+        }
     }
 
     private void OnDestroy()
