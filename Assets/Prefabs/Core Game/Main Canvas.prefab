@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 222118158}
   - component: {fileID: 222118157}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Game Timer Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad66a123829fa24cb7f548659945e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 10
+  baseLives: 3
   damage: 1
 --- !u!1 &1345683747
 GameObject:
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 296583182741759808}
   - component: {fileID: 296583182741759811}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Main Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3766f09c06cc64fafd2192c43f6c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 120
+  health: 50
   deathVFX: {fileID: 0}
   deathVFXTimer: 1
 --- !u!61 &-2738297523565649668

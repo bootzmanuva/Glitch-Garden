@@ -485,7 +485,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 4147883877421631108}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2266f170ceb7da745b91cabbff824df4, type: 3}
   m_Name: 
@@ -813,7 +813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1783876420
 Transform:
   m_ObjectHideFlags: 0
@@ -986,6 +986,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 222118155, guid: 4dc413311be75644f8b0764a76b9d1c8, type: 3}
+      propertyPath: m_Name
+      value: Slider
+      objectReference: {fileID: 0}
+    - target: {fileID: 222118157, guid: 4dc413311be75644f8b0764a76b9d1c8, type: 3}
+      propertyPath: levelTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1403172892, guid: 4dc413311be75644f8b0764a76b9d1c8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -994,6 +1002,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 296583182741759810, guid: 4dc413311be75644f8b0764a76b9d1c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 296583182741759822, guid: 4dc413311be75644f8b0764a76b9d1c8,
         type: 3}
@@ -1120,6 +1133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 2102796359540443227, guid: 60053f51cbe53fe4a92722a07546ac69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2102796359540443303, guid: 60053f51cbe53fe4a92722a07546ac69,
         type: 3}
       propertyPath: m_RootOrder
@@ -1184,6 +1202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1783876420}
     m_Modifications:
+    - target: {fileID: 1216157901, guid: 7a37b7412a1a19d41afa13171e14f023, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 907981802958841112, guid: 7a37b7412a1a19d41afa13171e14f023,
         type: 3}
       propertyPath: winLabel
